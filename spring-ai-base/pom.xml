@@ -11,7 +11,7 @@
 
 
     <groupId>com.zuke</groupId>
-    <artifactId>spring-ai-01-chat</artifactId>
+    <artifactId>spring-ai-base</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <name>spring-ai-01-chat</name>
