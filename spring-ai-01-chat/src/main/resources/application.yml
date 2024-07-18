@@ -1,0 +1,14 @@
+server:
+  port: 65500
+spring:
+  ai:
+    openai:
+      api-key: sk-xxxx
+      base-url: https://gpt.zukedog.cn
+      chat:
+        options:
+          model: gpt-4o-2024-05-13
+          # 温度越高，回答比较有创新性，但是准确率会下降
+          temperature: 0.4f
+  application:
+    name: spring-ai-01-chat
