@@ -14,5 +14,6 @@
 ## 目录
 
 1. spring-ai-base(openai基本使用)
-2. ...
+2. spring-ai-ollama(api调用本地ollama部署的大模型)
+3. ...
 
