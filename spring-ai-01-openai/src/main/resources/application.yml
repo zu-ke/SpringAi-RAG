@@ -11,4 +11,4 @@ spring:
           # 温度越高，回答比较有创新性，但是准确率会下降
           temperature: 0.4f
   application:
-    name: spring-ai-01-chat
+    name: spring-ai-01-openai

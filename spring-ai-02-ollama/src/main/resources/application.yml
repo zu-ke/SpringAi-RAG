@@ -1,0 +1,10 @@
+server:
+  port: 65501
+spring:
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: gemma2:latest
+  application:
+    name: spring-ai-02-ollama
