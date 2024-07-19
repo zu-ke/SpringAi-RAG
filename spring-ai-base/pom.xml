@@ -14,8 +14,8 @@
     <artifactId>spring-ai-base</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>spring-ai-01-chat</name>
-    <description>spring-ai-01-chat</description>
+    <name>spring-ai-base</name>
+    <description>spring-ai-base</description>
 
     <properties>
         <java.version>22</java.version>

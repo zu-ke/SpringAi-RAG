@@ -5,6 +5,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/spring-ai-01-chat/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-ai-base/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-ai-ollama/pom.xml" />
       </list>
     </option>
   </component>

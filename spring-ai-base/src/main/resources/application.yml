@@ -3,7 +3,7 @@ server:
 spring:
   ai:
     openai:
-      api-key: sk-xxxx
+      api-key: sk-hzRBWPY4JX0VTJtL1642B007Bc7d4313875eAb24021375Ae
       base-url: https://gpt.zukedog.cn
       chat:
         options:
