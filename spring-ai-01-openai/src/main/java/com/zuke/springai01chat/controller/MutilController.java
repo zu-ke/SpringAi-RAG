@@ -1,10 +1,10 @@
 package com.zuke.springai01chat.controller;
 
 import jakarta.annotation.Resource;
-import org.springframework.ai.chat.messages.Media;
 import org.springframework.ai.chat.messages.UserMessage;
 import org.springframework.ai.chat.model.ChatResponse;
 import org.springframework.ai.chat.prompt.Prompt;
+import org.springframework.ai.model.Media;
 import org.springframework.ai.openai.OpenAiAudioSpeechModel;
 import org.springframework.ai.openai.OpenAiAudioSpeechOptions;
 import org.springframework.ai.openai.OpenAiChatModel;
@@ -34,14 +34,14 @@ public class MutilController {
     @RequestMapping("/mutil")
     public String tts(@RequestParam(value = "msg", defaultValue = "你看到了什么") String msg) throws IOException {
         // 图片二进制流
-        byte[] imageData = new ClassPathResource("/img/1.jpg").getContentAsByteArray();
+        byte[] imageData = new ClassPathResource("/img/2.jpg").getContentAsByteArray();
         var userMessage = new UserMessage(
                 msg,
                 List.of(new Media(MimeTypeUtils.IMAGE_JPEG, imageData))
         );
         ChatResponse response = openAiChatModel.call(new Prompt(userMessage,
                 OpenAiChatOptions.builder()
-                        .withModel(OpenAiApi.ChatModel.GPT_4_TURBO_2204_04_09.getValue())
+                        .withModel(OpenAiApi.ChatModel.GPT_4_O.getValue())
                         .build()));
         return response.getResult().getOutput().getContent();
     }

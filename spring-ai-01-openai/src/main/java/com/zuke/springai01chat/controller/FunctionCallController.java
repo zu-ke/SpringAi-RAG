@@ -1,7 +1,6 @@
 package com.zuke.springai01chat.controller;
 
 import jakarta.annotation.Resource;
-import org.springframework.ai.chat.messages.Media;
 import org.springframework.ai.chat.messages.UserMessage;
 import org.springframework.ai.chat.model.ChatResponse;
 import org.springframework.ai.chat.prompt.Prompt;

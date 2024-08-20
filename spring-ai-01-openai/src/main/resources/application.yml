@@ -1,14 +1,22 @@
 server:
   port: 65500
 spring:
+  datasource:
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost/demo
   ai:
     openai:
-      api-key: sk-hzRBWPY4JX0VTJtL1642B007Bc7d4313875eAb24021375Ae
-      base-url: https://gpt.zukedog.cn
+      api-key: sk-xxx
+      base-url: https://gpt.raojialong.space
       chat:
         options:
-          model: gpt-4o-2024-05-13
+          model: gpt-4-turbo-2024-04-09
           # 温度越高，回答比较有创新性，但是准确率会下降
           temperature: 0.4f
   application:
     name: spring-ai-01-openai
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 100MB
